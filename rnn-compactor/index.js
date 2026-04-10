@@ -2,7 +2,7 @@ const extensionName = "rnn-chunk-dropper";
 const extensionFolderPath = import.meta.url.substring(0, import.meta.url.lastIndexOf('/'));
 
 const defaultSettings = {
-    enabled: false,
+    enabled: true,
     autoThreshold: true,
     thresholdTokens: 7000,
     dropPercentage: 40,
