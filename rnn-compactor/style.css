@@ -1,0 +1,19 @@
+.rnn-chunk-dropper-settings {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 5px;
+    background: var(--SmartThemeBlurTintColor);
+}
+
+.rnn-chunk-dropper-settings input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rnn-chunk-dropper-settings small {
+    display: block;
+    margin-top: 5px;
+    color: var(--SmartThemeBodyColor);
+    opacity: 0.8;
+}
