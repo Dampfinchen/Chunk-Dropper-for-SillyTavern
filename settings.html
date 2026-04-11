@@ -1,0 +1,46 @@
+<div class="rnn-chunk-dropper-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Chunk-Dropper-for-SillyTavern</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="checkbox_label">
+                <input type="checkbox" id="rnn_cd_enabled" />
+                <label for="rnn_cd_enabled">Enable Extension</label>
+            </div>
+            <hr>
+            
+            <div class="checkbox_label">
+                <input type="checkbox" id="rnn_cd_auto_threshold" />
+                <label for="rnn_cd_auto_threshold">Auto-Calculate Threshold</label>
+            </div>
+            <small>Automatically sets threshold based on your ST Context Size and Response Length sliders.</small>
+            
+            <div id="rnn_cd_manual_threshold_container" style="margin-top: 10px;">
+                <label for="rnn_cd_threshold">Manual Threshold (Tokens): <span id="rnn_cd_threshold_val"></span></label>
+                <input type="range" id="rnn_cd_threshold" min="1000" max="128000" step="500" />
+            </div>
+            
+            <label for="rnn_cd_percentage" style="margin-top: 10px;">Drop Amount: <span id="rnn_cd_percentage_val"></span>%</label>
+            <input type="range" id="rnn_cd_percentage" min="10" max="90" step="5" />
+
+            <div class="checkbox_label" style="margin-top: 10px;">
+                <input type="checkbox" id="rnn_cd_preserve_pairs" />
+                <label for="rnn_cd_preserve_pairs">Preserve Message Pairs (Strict API Mode)</label>
+            </div>
+
+            <hr>
+
+            <div class="checkbox_label">
+                <input type="checkbox" id="rnn_cd_compaction" />
+                <label for="rnn_cd_compaction">Enable Context Compaction (Summary)</label>
+            </div>
+            <small style="color: #ff9999;">Pauses to let the LLM summarize dropped messages so the AI retains memory of the early chat.</small>
+            
+            <button id="rnn_cd_reset" class="menu_button" style="margin-top: 15px;">Reset State & Clear Summary</button>
+            <small>Active Threshold: <span id="rnn_cd_active_calc">0</span> tokens</small>
+            <small>Messages dropped in this chat: <span id="rnn_cd_dropped_count">0</span></small>
+        </div>
+    </div>
+</div>

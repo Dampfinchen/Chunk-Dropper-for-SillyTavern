@@ -1,0 +1,10 @@
+{
+    "display_name": "Chunk-Dropper-for-SillyTavern",
+    "loading_order": 50,
+    "generate_interceptor": "rnnChunkDropperInterceptor",
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Gemini & User",
+    "version": "2.3.0",
+    "description": "Optimizes context for RNN/Hybrid models by dropping large chunks of history to prevent constant reprocessing."
+}
