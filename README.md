@@ -27,9 +27,11 @@ Right now, the feature doesn't work but for the ultimate solution, this extensio
 
 This way, the model would not lose previous memories. But yeah, that doesn't work. It requires a deeper understanding how Silly Tavern works. 
 
+
+
 Installation:
 
-Very simple! Put the rnn compactor folder in SillyTavern\public\scripts\extensions\third-party 
+Very simple! Either download the folder and put it in SillyTavern\public\scripts\extensions\third-party or git clone the repo there.
 
 After that, make sure to enable the extension in the extension configuration menu. It should work out of the box.
 
