@@ -2,6 +2,7 @@ Update:
 
 See changelogs. Context compaction works now. Give it a few turns to settle. It currently needs more reprocessing due to a bug, but after that it should work.
 
+---------------------------------------------------
 
 Vibe coded and alpha. Many things don't work.
 
